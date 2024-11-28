@@ -10,7 +10,7 @@ amariseconds = amarihours % 60
 
 if hours > 0:
     print ("{}時間{}分{}秒".format(hours, minutes, amariseconds))
-elif  minutes > 0:
+elif minutes > 0:
       print ("{}分{}秒".format(minutes, amariseconds))
 else:
     print ("{}秒".format(amariseconds))
