@@ -20,6 +20,9 @@ out=$( echo 3601 | ./kadai1.py)
 out=$( echo 121 | ./kadai1.py)
 [ "${out}" = "秒数を入力2分1秒"  ] || ng "$LINENO"
 
+out=$( echo 0 | ./kadai1.py)
+[ "${out}" = "秒数を入力0秒"  ] || ng "$LINENO"
+
 out=$( echo あ | ./kadai1.py)
 [ "$?" = 1 ]       || ng "$LINENO"
 [ "${out}" = ""  ] || ng "$LINENO"
@@ -28,7 +31,7 @@ out=$( echo a | ./kadai1.py)
 [ "$?" = 1 ]       || ng "$LINENO"
 [ "${out}" = ""  ] || ng "$LINENO"
 
-out=$( echo  | ./kadai1.py)
+out=$( echo 2.1 | ./kadai1.py)
 [ "$?" = 1 ]       || ng "$LINENO"
 [ "${out}" = ""  ] || ng "$LINENO"
 
