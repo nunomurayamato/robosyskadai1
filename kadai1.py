@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 yamato nunomura
 
 suuti = input("秒数を入力")
 suuti1 = int(suuti)
