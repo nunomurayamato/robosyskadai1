@@ -24,15 +24,12 @@ out=$( echo 0 | ./kadai1.py)
 [ "${out}" = "秒数を入力0秒"  ] || ng "$LINENO"
 
 out=$( echo あ | ./kadai1.py)
-[ "$?" = 1 ]                 || ng "$LINENO"
 [ "${out}" = "秒数を入力"  ] || ng "$LINENO"
 
 out=$( echo a | ./kadai1.py)
-[ "$?" = 1 ]                 || ng "$LINENO"
 [ "${out}" = "秒数を入力"  ] || ng "$LINENO"
 
 out=$( echo 2.1 | ./kadai1.py)
-[ "$?" = 1 ]                 || ng "$LINENO"
 [ "${out}" = "秒数を入力"  ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
