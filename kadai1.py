@@ -1,8 +1,18 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText: 2024 yamato nunomura
+import sys
 
-suuti = input("秒数を入力")
-suuti1 = int(suuti)
+while 1:
+    suuti = input("秒数を入力")
+    try:
+        suuti1 = int(suuti)
+        if suuti1 < 0:
+            sys.exit()
+        else:
+            break
+    except ValueError:
+        sys.exit()
+
 hours = suuti1 // 3600
 amarihours = suuti1 % 3600
 minutes = amarihours // 60
