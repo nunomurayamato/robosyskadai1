@@ -3,15 +3,15 @@
 import sys
 
 while 1:
-    suuti = input("秒数を入力")
+    suuti = sys.stdin.readline()
     try:
         suuti1 = int(suuti)
         if suuti1 < 0:
-            sys.exit()
+            sys.exit(1)
         else:
             break
     except ValueError:
-        sys.exit()
+        sys.exit(1)
 
 hours = suuti1 // 3600
 amarihours = suuti1 % 3600
