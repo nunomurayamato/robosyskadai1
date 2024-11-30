@@ -9,36 +9,39 @@
 ## 使用方法
 
 - 1.リポジトリをクローン。  
-  `$git clone https://github.com/nunomurayamato/robosyskadai1.git`
+  `$git clone https://github.com/nunomurayamato/robosyskadai1.git`  
 - 2.ディレクトリに移動。  
-  `$cd TimeConverter`
+  `$cd TimeConverter`  
 - 3.必要に応じて実行権限を付与。  
-  `$chmod +x timeconversion`
+  `$chmod +x timeconversion`  
 - 4.ターミナルから以下のコマンドを実行。  
-  `$echo "計算したい時間(秒)"　| ./timeconversion`
+  `$echo "計算したい時間(秒)"　| ./timeconversion`  
 
 ## 実行例
 
 - `$echo 5678 | ./timeconversion`  
-  1時間34分38秒
+  1時間34分38秒  
 - `$echo 456 | ./timeconversion`  
-  7分36秒
+  7分36秒  
 - `$echo 45 | ./timeconversion`  
-  45秒   
+  45秒  
 
 ## テスト方法
 
 - 1.ターミナルから以下のコマンドを実行。  
-  `$./test.bash`
+  `$./test.bash`  
 - 2.テストに成功すると以下のメッセージが表示されます。  
-  OK
+  OK  
 - 3.テストに失敗すると以下のメッセージのように表示されます。  
-  ()行目が違うよ
+  ()行目が違うよ  
 
-## 動作環境
+## 必要なソフトウェア
+
+- Python:テスト済みバージョン3.7, 3.8, 3.9, 3.10
+
+## テスト環境
 
 - Ubuntu 20.04
-- Python:テスト済みバージョン3.7, 3.8, 3.9, 3.10
 
 ## ライセンス
 
