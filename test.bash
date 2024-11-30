@@ -25,12 +25,15 @@ out=$( echo 0 | ./timeconversion)
 [ "${out}" = "0秒"  ] || ng "$LINENO"
 
 out=$( echo あ | ./timeconversion)
+[ "$?" = 1 ]       || ng "$LINENO"
 [ "${out}" = ""  ] || ng "$LINENO"
 
 out=$( echo a | ./timeconversion)
+[ "$?" = 1 ]       || ng "$LINENO"
 [ "${out}" = ""  ] || ng "$LINENO"
 
 out=$( echo 2.1 | ./timeconversion)
+[ "$?" = 1 ]       || ng "$LINENO"
 [ "${out}" = ""  ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
