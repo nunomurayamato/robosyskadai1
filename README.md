@@ -2,14 +2,14 @@
 
 -  ロボットシステム学の課題１
 
-##　概要
+## 概要
 
 - このプログラムは入力された秒数を必要に応じて時間,分,秒に変換するスクリプトです。
 
-##　使用方法
+## 使用方法
 
 - 1.リポジトリをクローン。
-  git clone https://github.com/nunomurayamato/TimeConverter.git
+  git clone https://github.com/nunomurayamato/robosyskadai1.git
 - 2.ディレクトリに移動。
   cd TimeConverter
 - 3.必要に応じて実行権限を付与。
