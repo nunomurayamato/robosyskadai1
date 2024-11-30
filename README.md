@@ -1,10 +1,6 @@
 # Time Converter
 ![test](https://github.com/nunomurayamato/robosyskadai1/actions/workflows/test.yml/badge.svg)
 
-## プロジェクトタイトル
-
--  ロボットシステム学の課題１
-
 ## 概要
 
 - このプログラムは入力された秒数を必要に応じて時間,分,秒に変換するスクリプトです。
