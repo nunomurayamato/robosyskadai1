@@ -1,4 +1,7 @@
-# プロジェクトタイトル
+# Time Converter
+![test](https://github.com/nunomurayamato/robosyskadai1/actions/workflows/test.yml/badge.svg)
+
+## プロジェクトタイトル
 
 -  ロボットシステム学の課題１
 
